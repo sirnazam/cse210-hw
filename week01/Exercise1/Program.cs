@@ -1,16 +1,18 @@
 using System;
 
-class Program
+namespace Sirnazam
 {
-    static void Main(string[] args)
+    class Program
     {
-        // Ask user for their names
-        Console.Write("What is your first name?: ");
-        string first = Console.ReadLine();
+     static void Main(string[] arg)
+        {
+            Console.Write("What is first your name?: ");
+            string first = Console.ReadLine();
 
-        Console.Write("What is your last name?: ");
-        string last = Console.ReadLine();
-
-        Console.WriteLine($"Your name is {last} {first}");
+            Console.Write("What is your last name?: ");
+            string last = Console.ReadLine();
+            
+            Console.WriteLine($"Your name is {last} {first}");
+        }   
     }
 }
