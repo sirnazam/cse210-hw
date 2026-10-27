@@ -1,9 +1,15 @@
 using System;
 
-class Program
+namespace Sirnazam
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello Sandbox World!!!");
+        static void Main(string[] arg)
+        {
+            Console.Write("What is your favorite color?: ");
+            string color = Console.ReadLine();
+            Console.WriteLine($"Your Favorite color is {color}");
+
+        }
     }
 }
