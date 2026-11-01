@@ -6,9 +6,24 @@ namespace Sirnazam
     {
         static void Main(string[] arg)
         {
-            Console.Write("What is your favorite color?: ");
-            string color = Console.ReadLine();
-            Console.WriteLine($"Your Favorite color is {color}");
+            Console.WriteLine("Enter number: ");
+            string valueFromUser = Console.ReadLine();
+
+            int x = int.Parse(valueFromUser);
+            int y = 2;
+
+            if (x > y)
+            {
+                Console.WriteLine("Greater");
+            }
+            else if (x < y)
+            {
+                Console.WriteLine("Less")
+            }
+            else
+            {
+                Console.WriteLine("Equal");
+            }
 
         }
     }

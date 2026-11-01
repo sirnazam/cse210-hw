@@ -6,6 +6,8 @@ namespace Sirnazam
     {
      static void Main(string[] arg)
         {
+            // Ask user for their names
+            
             Console.Write("What is first your name?: ");
             string first = Console.ReadLine();
 
