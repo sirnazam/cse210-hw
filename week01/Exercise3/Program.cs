@@ -1,9 +1,35 @@
+
 using System;
 
-class Program
+namespace Sirnazam
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello World! This is the Exercise3 Project.");
+        static void Main(string[] args)
+        {
+            Random randomGenerator = new Random();
+            int magicNumber = randomGenerator.Next(1, 100);
+
+            int guess = -1;
+
+            while (guess != magicNumber)
+            {
+                Console.Write("Pick a number: ");
+                guess = int.Parse(Console.ReadLine());
+
+                if (magicNumber > guess)
+                {
+                    Console.WriteLine("Higher");
+                }
+                else if (magicNumber < guess)
+                {
+                    Console.WriteLine("Lower");
+                }
+                else
+                {
+                    Console.WriteLine("You picked the right number!");
+                }
+            }
+        }
     }
 }
